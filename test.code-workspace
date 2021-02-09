@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Noctis Lux",
+		"files.associations": {
+			"vector": "cpp",
+			"ostream": "cpp"
+		},
+		"editor.formatOnSave": true,
+		"C_Cpp.default.cppStandard": "c++17",
+	}
+}
