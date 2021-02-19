@@ -8,7 +8,8 @@
 		"workbench.colorTheme": "Noctis Lux",
 		"files.associations": {
 			"vector": "cpp",
-			"ostream": "cpp"
+			"ostream": "cpp",
+			"type_traits": "cpp"
 		},
 		"editor.formatOnSave": true,
 		"C_Cpp.default.cppStandard": "c++17",

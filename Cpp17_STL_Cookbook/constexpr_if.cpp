@@ -20,7 +20,10 @@ public:
             }
             return copy;
         }
-        return val + x;
+        else
+        {
+            return val + x;
+        }
     }
 };
 

@@ -2,7 +2,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++ build active file",
+            "label": "g++17 compile",
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
@@ -11,7 +11,43 @@
                 "-I${workspaceFolder}",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/a.out"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "clang++17 compile",
+            "command": "clang++",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-lpthread",
+                "-I${workspaceFolder}",
+                "${file}",
+                "-o",
+                "${fileDirname}/a.out"
+                // "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "clang++14 compile",
+            "command": "clang++",
+            "args": [
+                "-g",
+                "-std=c++14",
+                "-lpthread",
+                "-I${workspaceFolder}",
+                "${file}",
+                "-o",
+                "${fileDirname}/a.out"
+                // "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "/usr/bin"

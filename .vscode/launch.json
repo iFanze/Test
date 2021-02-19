@@ -5,10 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ build and debug active file",
+            "name": "clang++ 17 编译并启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "MIMode": "lldb",
+            "preLaunchTask": "clang++17 compile",
+        },
+        {
+            "name": "clang++ 14 编译并启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "MIMode": "lldb",
+            "preLaunchTask": "clang++14 compile",
+        },
+        {
+            "name": "g++ 17 编译并启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -22,7 +46,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "g++ build active file",
+            "preLaunchTask": "g++17 compile",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
